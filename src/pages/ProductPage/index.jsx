@@ -52,6 +52,26 @@ const ProductPage = () => {
 
       <Nav />
       <div className="info-s">
+        <div className="mini-image">
+          <h1>image</h1>
+          <div className="img-gallery-mini">
+            {item?.img?.map((image, index) => {
+              return <img key={index} src={`${image}`} alt="" className="mini"/>;
+            })}
+          </div>
+          <h1>image</h1>
+          <div className="img-gallery-mini">
+            {item?.img?.map((image, index) => {
+              return <img key={index} src={`${image}`} alt="" className="mini" />;
+            })}
+          </div>
+          <h1>image</h1>
+          <div className="img-gallery-mini">
+            {item?.img?.map((image, index) => {
+              return <img key={index} src={`${image}`} alt=""  className="mini"/>;
+            })}
+          </div>
+        </div>
         <div className="img-gallery">
           {item?.img?.map((image, index) => {
             return <img key={index} src={`${image}`} alt="" />;

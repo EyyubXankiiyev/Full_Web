@@ -2,9 +2,36 @@
   display: flex;
   align-items: start;
   position: relative;
+  margin-bottom: 90px;
+
+  .mini-image {
+    display: flex;
+    margin-left: 300px;
+    flex-direction: column;
+    justify-content: start;
+    cursor: pointer;
+    h1 {
+      margin-left: 10px;
+      margin-bottom: -8px;
+      font-size: 13px;
+      font-weight: 400;
+      line-height: 27px;
+      text-align: left;
+      color: #d1d1d1;
+    }
+
+    .mini {
+      width: 90px;
+      height: 90px;
+      gap: 0px;
+      opacity: 0px;
+
+    }
+  }
 
   .img-gallery {
-    margin-left: 219px;
+    
+    margin-left: 18px;
     display: flex;
     flex-direction: column;
 
@@ -133,6 +160,11 @@
           gap: 0px;
           opacity: 0px;
           cursor: pointer;
+
+          &:hover {
+            background: rgb(185, 185, 185);
+            transition: 0.6s;
+          }
         }
 
         .black {
@@ -146,6 +178,10 @@
           gap: 0px;
           opacity: 0px;
 
+          &:hover {
+            background: rgb(86, 86, 86);
+            transition: 0.6s;
+          }
         }
 
         .green {
@@ -158,6 +194,11 @@
           opacity: 0px;
           cursor: pointer;
 
+          &:hover {
+            background: #18a987;
+
+            transition: 1s;
+          }
         }
 
 
@@ -206,7 +247,10 @@
       font-weight: 400;
       line-height: 19.2px;
       text-align: center;
-
+      &:hover{
+        background: rgba(26, 125, 52, 0.607);
+        transition: 0.8s;
+      }
     }
 
     p {

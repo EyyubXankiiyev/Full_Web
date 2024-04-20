@@ -7,8 +7,7 @@ export const ProductCard = (props) => {
   const navigate = useNavigate()
 
   const itemClicked = async() => {
-    //props.setClicked?.(!props.clicked);
-    //const x = await localStorage.setItem("selectedItem", props.item.id);
+    
     navigate(`/product/${props.item.id}`)
     window.scrollTo(0, 0);
 
