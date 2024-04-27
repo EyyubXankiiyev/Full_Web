@@ -1,10 +1,10 @@
 import React from "react";
-import { useState } from "react";
+import { useState , useContext } from "react";
 import { useEffect } from "react";
 import Nav from "../../components/Nav";
 import Footer from "../../components/Footer";
 import { products } from "../../data/products";
-import { Helmet } from "react-helmet";
+import { ShopContext } from "../../context/shop-context";
 import "./style.scss";
 import { ProductCard } from "../../components/ProductCard";
 import { useParams } from "react-router-dom";
@@ -44,7 +44,9 @@ const ProductPage = () => {
     window.scrollTo(0, 0);
     getData();
   }, [params]);
+  const { addToCart, cartItems } = useContext(ShopContext);
 
+  const cartItemCount = cartItems[params.id];
 
 
   return (
@@ -56,7 +58,7 @@ const ProductPage = () => {
           <h1>image</h1>
           <div className="img-gallery-mini">
             {item?.img?.map((image, index) => {
-              return <img key={index} src={`${image}`} alt="" className="mini"/>;
+              return <img key={index} src={`${image}`} alt="" className="mini" />;
             })}
           </div>
           <h1>image</h1>
@@ -68,7 +70,7 @@ const ProductPage = () => {
           <h1>image</h1>
           <div className="img-gallery-mini">
             {item?.img?.map((image, index) => {
-              return <img key={index} src={`${image}`} alt=""  className="mini"/>;
+              return <img key={index} src={`${image}`} alt="" className="mini" />;
             })}
           </div>
         </div>
@@ -107,7 +109,9 @@ const ProductPage = () => {
               <h1>PRICE:</h1>
               <h3>$50.00</h3>
             </div>
-            <button className="add">ADD TO CART</button>
+            <button className="add" onClick={() => addToCart(params.id)}>
+              Add To Cart {cartItemCount > 0 && <> ({cartItemCount})</>}
+            </button>
             <p>Find stunning women's cocktail dresses and party dresses. Stand out in lace and metallic cocktail dresses and party dresses from all your favorite brands.</p>
           </div>
         </div>
