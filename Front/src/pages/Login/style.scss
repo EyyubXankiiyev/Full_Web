@@ -1,0 +1,119 @@
+.main-c {
+
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .login-part {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 399px;
+        height: 375px;
+        top: 124px;
+        left: 567px;
+        gap: 0px;
+        opacity: 0px;
+
+        .txt {
+            width: 290px;
+            height: 101px;
+            top: 124px;
+            left: 630px;
+            gap: 0px;
+            opacity: 0px;
+
+            margin-bottom: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            h1 {
+
+                font-size: 45.62px;
+                font-weight: 700;
+                line-height: 55.61px;
+                text-align: left;
+                margin-bottom: 8px;
+
+            }
+
+            h3 {
+
+                font-size: 31.58px;
+                font-weight: 400;
+                line-height: 38.5px;
+                text-align: left;
+
+            }
+
+
+        }
+
+        .input-part {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .input1 {
+                display: flex;
+                margin-bottom: 26px;
+                align-items: center;
+                border: solid 1px #d3d1d1;
+                width: 399px;
+                height: 47px;
+                top: 285px;
+                left: 568px;
+                padding: 12px 26px 12px 26px;
+                gap: 10px;
+                border-radius: 20px;
+                border: 1px 0px 0px 0px;
+                opacity: 0px;
+                color: #a9a9a9;
+            }
+
+            .login_b {
+                width: 399px;
+                height: 48px;
+                top: 451px;
+                left: 567px;
+                padding: 12px 26px 12px 26px;
+                gap: 10px;
+                opacity: 0px;
+                color: #fff;
+                background: #5ECE7B;
+            }
+
+        }
+
+    }
+
+    .txt-a {
+        display:  flex;
+   
+        h1 {
+
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 21.13px;
+            text-align: left;
+            margin-right: 4px;
+            color: #0F6450
+        }
+        h3{
+            cursor: pointer;
+            font-size: 18px;
+            color: #0F6450;
+            font-weight: 500;
+            line-height: 21.13px;
+            text-align: left;
+            border-bottom: 1px solid #0F6450;
+        }
+    }
+}
