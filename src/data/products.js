@@ -25,6 +25,7 @@ export const products = [
     name: "Broken T Shirt",
     desc: "Men T Shirts",
     price: 23,
+    amount: 1,
   },
   {
     id: 2,
@@ -35,6 +36,7 @@ export const products = [
     name: "Mermer T Shirt",
     desc: "Men T Shirts",
     price: 44,
+    amount: 1,
   },
   {
     id: 3,
@@ -45,6 +47,7 @@ export const products = [
     name: "Ag T Shirt",
     desc: "Men T Shirts",
     price: 12,
+    amount: 1,
   },
   {
     id: 4,
@@ -55,6 +58,7 @@ export const products = [
     name: "Qara T Shirt",
     desc: "Men T Shirts",
     price: 9,
+    amount: 1,
   },
   {
     id: 5,
@@ -65,6 +69,7 @@ export const products = [
     name: "boz T Shirt",
     desc: "women T Shirts",
     price: 42,
+    amount: 1,
   },
   {
     id: 6,
@@ -74,6 +79,7 @@ export const products = [
     name: "Red T Shirt",
     desc: "Men T Shirts",
     price: 53,
+    amount: 1,
   },
   {
     id: 7,
@@ -83,6 +89,7 @@ export const products = [
     name: "Green T Shirt",
     desc: "Men T Shirts",
     price: 15,
+    amount: 1,
   },
   {
     id: 8,
@@ -92,6 +99,7 @@ export const products = [
     name: "Blue T Shirt",
     desc: "Women T Shirts",
     price: 88,
+    amount: 1,
   },
   {
     id: 9,
@@ -101,6 +109,7 @@ export const products = [
     name: "Yellow T Shirt",
     desc: "Men T Shirts",
     price: 82,
+    amount: 1,
   },
   {
     id: 10,
@@ -111,6 +120,7 @@ export const products = [
     name: "Orage T Shirt",
     desc: "Women T Shirts",
     price: 17,
+    amount: 1,
   },
   {
     id: 11,
@@ -121,6 +131,7 @@ export const products = [
     name: "Purple T Shirt",
     desc: "Men T Shirts",
     price: 78,
+    amount: 1,
   },
   {
     id: 12,
@@ -131,5 +142,9 @@ export const products = [
     name: "Pink T Shirt",
     desc: "Men T Shirts",
     price: 53,
+    amount: 1,
   },
 ];
+
+
+console.log(products);

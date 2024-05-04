@@ -1,18 +1,17 @@
 import React from "react";
-import { useState , useContext } from "react";
-import { useEffect } from "react";
+import { useEffect , useState } from "react";
 import Nav from "../../components/Nav";
 import Footer from "../../components/Footer";
 import { products } from "../../data/products";
-import { ShopContext } from "../../context/shop-context";
 import "./style.scss";
-import { ProductCard } from "../../components/ProductCard";
+import '../ProductsPage'
 import { useParams } from "react-router-dom";
-
-const ProductPage = () => {
+import '../cartPage/cart'
+const ProductPage = ({ handleClick}) => {
   const [item, setItem] = useState(false);
   const params = useParams();
-
+  const { name, img, price ,id } = item;
+  
   function shuffle(array) {
     let currentIndex = array.length,
       randomIndex;
@@ -44,9 +43,7 @@ const ProductPage = () => {
     window.scrollTo(0, 0);
     getData();
   }, [params]);
-  const { addToCart, cartItems } = useContext(ShopContext);
 
-  const cartItemCount = cartItems[params.id];
 
 
   return (
@@ -109,8 +106,8 @@ const ProductPage = () => {
               <h1>PRICE:</h1>
               <h3>$50.00</h3>
             </div>
-            <button className="add" onClick={() => addToCart(params.id)}>
-              Add To Cart {cartItemCount > 0 && <> ({cartItemCount})</>}
+            <button className="add" onClick={() => handleClick(item)}>
+              Add To Cart
             </button>
             <p>Find stunning women's cocktail dresses and party dresses. Stand out in lace and metallic cocktail dresses and party dresses from all your favorite brands.</p>
           </div>
