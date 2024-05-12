@@ -2,8 +2,8 @@ import { createBrowserRouter } from "react-router-dom";
 
 import Register from "../pages/Register";
 import Login from "../pages/Login";
-
-import Cart from "../pages/cartPage/cart"
+import AdminPanel from '../pages/adminPanel'
+import CartPage from "../pages/cartPage"
 import ProductsPage from "../pages/ProductsPage";
 import ProductPage from "../pages/ProductPage";
 
@@ -28,6 +28,10 @@ export const routes = createBrowserRouter([
   },
   {
     path: "/cart",
-    element: <Cart />
-  }
+    element: <CartPage />,
+  },
+  {
+    path: "/APanel",
+    element: <AdminPanel />,
+  },
 ]);
